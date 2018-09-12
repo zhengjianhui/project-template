@@ -15,6 +15,7 @@
 		<module>project-admin</module>
 		<module>project-web</module>
 		<module>project-service</module>
+		<module>project-api</module>
 	</modules>
 
 	<dependencyManagement>
