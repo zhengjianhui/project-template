@@ -4,33 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.yzf.project</groupId>
-	<artifactId>root</artifactId>
+	<artifactId>project-admin</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>pom</packaging>
+	<packaging>jar</packaging>
 
-	<name>root</name>
+	<name>project-admin</name>
 	<description>Demo project for Spring Boot</description>
 
-	<modules>
-		<module>project-admin</module>
-	</modules>
-
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-dependencies</artifactId>
-				<version>2.0.3.RELEASE</version>
-				<type>pom</type>
-				<scope>import</scope>
-			</dependency>
-			<dependency>
-				<groupId>com.yzf</groupId>
-				<artifactId>daizhang.framework.exception</artifactId>
-				<version>0.0.1-SNAPSHOT</version>
-			</dependency>
-		</dependencies>
-	</dependencyManagement>
+	<parent>
+		<groupId>com.yzf.project</groupId>
+		<artifactId>root</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
